@@ -35,6 +35,6 @@ ENV PATH=$ANT_HOME/bin:$PATH
 RUN wget -O- -q http://tenet.dl.sourceforge.net/project/sslexplorer/SSL-Explorer%201.0/1.0.0_RC17/sslexplorer-1.0.0_RC17-src.tar.gz | tar xz
 
 WORKDIR /sslexplorer-1.0.0_RC17
-EXPOSE 28080
-CMD ["ant","install"]
+EXPOSE 28080 443 
+
 
